@@ -1,0 +1,41 @@
+<!--File: index.html
+    GUI Assignment: Interactive Dynamic Table
+    Jordy Guzman, UMass Lowell Computer Science, Jordy_guzmanalcaraz@student.uml.edu (c) 2023 
+    by Guzman. All rights reserved. May be freely copied or excerpted for educational 
+    purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Create a Multiplication Table!</title>
+    <!--Link style sheet to Html file-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--Creates Header of Webpage-->
+    <h1>Create A Multiplication Table!</h1>
+    <!--Form created for user input-->
+    <form>
+      <!--Four values needed in user input-->
+      <label for="MinCol">Minimum Column Value (between -50 to 50):</label><br>
+      <input type="text" id="MinCol" name="MinCol"><br>
+      <label for="MaxCol">Maximum Column Value (between -50 to 50):</label><br>
+      <input type="text" id="MaxCol" name="MaxCol"><br>
+      <label for="MinRow">Minimum Row Value (between -50 to 50):</label><br>
+      <input type="text" id="MinRow" name="MinRow"><br>
+      <label for="MaxRow">Maximum Row Value (between -50 to 50):</label><br>
+      <input type="text" id="MaxRow" name="MaxRow"><br><br>
+      <!--Create button to send user input for dynamic table creation-->
+      <input type="button" id="submit" value="Generate Table">
+    </form>
+    <!--Error message printed if invalid user input-->
+    <h2 id="Error"></h2>
+    <div>
+      <!--Creation of Table-->
+      <table id="MultTable"></table>
+    </div>
+	</body>
+  <!--Link javascript file to Html-->
+	<script src="js/script.js"></script>
+</html>
